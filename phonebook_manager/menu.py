@@ -6,7 +6,13 @@ def welcome():
     print('\n\n\n')
 
 def main_menu():
-    pass
+    print("1:    Create a new phonebook")
+    print("2:    Load an existing phonebook")
+    print("3:    Delete a phonebook phonebook")
+    print()
+    print("0:    Exit Program")
+    print()
+    
 
 def select_option(options):
     option_valid = False

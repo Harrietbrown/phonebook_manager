@@ -8,13 +8,9 @@ class MissingDirectoryError(Exception):
         return "There is an error, library could not be found or created in {}".format(self.message)
 
 class Phonebook(dict):
-    def __init__(self, filename):
-        self._filename = filename
-        initial = open(filename,'r')
-        for line in initial:
-            line = line.rstrip()
-            key,value = line.split('=',1)
-            dict.__setitem__(self,key,value)
+    def __init__(self, filename,directory):
+        self._filename = directory+filename
+        initial = open(self._filename,'wb')
         initial.close()
 
     def save_phonebook(self):
