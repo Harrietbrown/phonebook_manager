@@ -6,9 +6,9 @@ def welcome():
     print('\n\n\n')
 
 def main_menu():
-    print("1:    Create a new phonebook")
-    print("2:    Load an existing phonebook")
-    print("3:    Delete a phonebook phonebook")
+    print("1:    Display an existing phonebook")
+    print("2:    Create a new phonebook")
+    print("3:    add a number to an existing phonebook")
     print()
     print("0:    Exit Program")
     print()
